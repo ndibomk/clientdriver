@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Test from "./Circles";
 
 function Requirement() {
   const { user } = useSelector((state) => ({ ...state.auth }));
@@ -7,6 +8,10 @@ function Requirement() {
   return (
     <div className="requiremain">
       <h5 style={{ fontSize: "2rem" }}>Requirements</h5>
+      <div className="test-Line" style={{ marginLeft: "8rem" }}>
+        <Test />
+      </div>
+
       <div className="Requirement">
         <div className="circle2">
           <div className="circle">
@@ -16,9 +21,8 @@ function Requirement() {
             <p style={{ color: "#760c46", fontSize: "1.6rem" }}>Age </p>
             <p>Our drivers must be 18+</p>
           </div>
-
-          <div className={user ? 'user-class' : 'line'}>
-    </div>        </div>
+          {/* <div className={user ? "user-class" : "line"}></div>  */}
+        </div>
 
         <div className="circle1">
           <div className="circle">
@@ -34,7 +38,7 @@ function Requirement() {
               a regular basis
             </p>
           </div>
-          <div className={user ? 'user-class' : 'lines'}></div>
+          {/* <div className={user ? "user-class" : "lines"}></div> */}
         </div>
         <div className="circle3">
           <div className="circle">

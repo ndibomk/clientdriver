@@ -37,7 +37,7 @@ console.log('user',user);
      {/* <BrowserRouter> */}
     
      <Routes>
-     <Route path='/' element={<Hero/>}/>
+     <Route path='/' element={<Home/>}/>
      <Route path='/dashboard' element={<Main/>}>
      <Route path='pending' element={<Pedding/>}/>
      <Route path='succes' element={<Success/>}/>
@@ -46,7 +46,7 @@ console.log('user',user);
      <Route path='/login' element={<Login/>}/>
      <Route path='/orders' element={<CustomerOrders/>}/>
      </Routes> 
-     <Home/>
+     {/* <Home/> */}
      <Footer/>
      {/* </BrowserRouter> */}
      
