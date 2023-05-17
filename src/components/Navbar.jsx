@@ -35,6 +35,10 @@ function Header() {
                 </h1>
           
         </div>
+        {/* <Link to='/admin'>
+        <button className="btn">Admin</button>
+
+        </Link> */}
         <div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

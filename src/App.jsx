@@ -20,6 +20,11 @@ import Pedding from './pages/status/Pedding';
 import Success from './pages/status/Success';
 import Rejected from './pages/status/Rejected';
 import CustomerOrders from './pages/Orders/CustomerOrders';
+import AdminDashBoard from './pages/AdminDashBoard';
+import SingleUser from './pages/users/SingleUser';
+import UserOrders from './pages/users/UserOrders';
+import Analytics from './pages/Analytics';
+import Feedback from './pages/Feedback';
 function App() {
   const dispatch = useDispatch();
   const[data,setDate]=useState([])
@@ -37,17 +42,24 @@ console.log('user',user);
      {/* <BrowserRouter> */}
     
      <Routes>
-     <Route path='/' element={<Hero/>}/>
-     <Route path='/dashboard' element={<Main/>}>
+     <Route path='/' element={<Home/>}/>
+     <Route path='/admin' element={<AdminDashBoard/>}>
      <Route path='pending' element={<Pedding/>}/>
-     <Route path='succes' element={<Success/>}/>
+     <Route index  element={<Success/>}/>
      <Route path='rejected' element={<Rejected/>}/>
      </Route>
      <Route path='/login' element={<Login/>}/>
      <Route path='/orders' element={<CustomerOrders/>}/>
+     {/* <ProtectedRoutes path="/dashboard" component={<Main/> }/> */}
+     <Route path='/dashboard' element={<Main/>}/>
+     <Route path='user/:id' element={<SingleUser/>}/>
+     <Route path='/orders/:id' element={<UserOrders/>}/>
+     <Route path='/analytics' element={<Analytics/>}/>
+     {/* <Route path='/feedback' element={<Feedback/>}/> */}
+
      </Routes> 
-     <Home/>
-     <Footer/>
+     {/* <Home/> */}
+     {/* <Footer/> */}
      {/* </BrowserRouter> */}
      
     </>
