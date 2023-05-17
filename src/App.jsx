@@ -46,13 +46,12 @@ console.log('user',user);
      <Route path='/login' element={<Login/>}/>
      <Route path='/orders' element={<CustomerOrders/>}/>
      </Routes> 
-<<<<<<< HEAD
+
     {/* <Home/>
      <Footer/>  */}
-=======
      {/* <Home/> */}
      <Footer/>
->>>>>>> c5036866d6389caffdd2e14fb3327c0e1b7cb761
+
      {/* </BrowserRouter> */}
      
     </>
