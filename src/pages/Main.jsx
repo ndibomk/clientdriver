@@ -5,12 +5,19 @@ import AdminDashBoard from "./AdminDashBoard";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Tests from "./Tests";
+<<<<<<< HEAD
 import { toast } from "react-toastify";
 
 import { Link } from "react-router-dom";
 const Main = () => {
   const { user } = useSelector((state) => ({ ...state.auth }));
 console.log(user);
+=======
+import { Link } from "react-router-dom";
+const Main = () => {
+  const { user } = useSelector((state) => ({ ...state.auth }));
+
+>>>>>>> d894d11efaf6644acf01bf6dc6008bb4aa05b14c
   const [expenses, setExpenses] = useState([
     { description: "Groceries", amount: 60 },
     { description: "Gas", amount: 70 },
@@ -30,7 +37,10 @@ console.log(user);
         </>
       ) : (
         <>
+<<<<<<< HEAD
          
+=======
+>>>>>>> d894d11efaf6644acf01bf6dc6008bb4aa05b14c
           <div className="Main">
             <div className="main-dash">
               <div className="main-top">
@@ -126,7 +136,11 @@ console.log(user);
               <div className="main-bottom">
                 <Link to="/orders">
                   <button  className="order-button">
+<<<<<<< HEAD
                     <h1 style={{marginTop:'',textAlign:'center'}}>New Order</h1>
+=======
+                    <h1 style={{marginTop:'.5rem',textAlign:'center'}}>New Order</h1>
+>>>>>>> d894d11efaf6644acf01bf6dc6008bb4aa05b14c
                   </button>
                 </Link>
               </div>

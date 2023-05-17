@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.3",
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
@@ -22,7 +26,10 @@
     "react-router-dom": "^6.10.0",
     "react-toastify": "^9.1.2",
     "react-transition-group": "^4.4.5",
+<<<<<<< HEAD
     "react-webcam": "^7.0.1",
+=======
+>>>>>>> d894d11efaf6644acf01bf6dc6008bb4aa05b14c
     "styled-components": "^6.0.0-rc.1"
   },
   "devDependencies": {

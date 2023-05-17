@@ -35,7 +35,11 @@ const Hero = () => {
       <div className="left">
         <div className="hero-pg">
           <h4 className="introp">
+<<<<<<< HEAD
             Ditch the dinner deliveries.  Drive  with  a sharper purpose.
+=======
+            Ditch the dinner deliveries.  Drive  with <br /> a sharper purpose.
+>>>>>>> d894d11efaf6644acf01bf6dc6008bb4aa05b14c
           </h4>
         </div>
         <div className="quiz-content">
